@@ -1,0 +1,35 @@
+/* 2.2 - Color - Start
+================================================== */
+
+// Overlay Setting - Start
+.has_overlay {
+	z-index: 1;
+	position: relative;
+	.overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		position: absolute;
+	}
+}
+// Overlay Setting - End
+
+// Social Solor - Start
+.color_facebook {
+	color: #3b5998;
+}
+.color_twitter {
+	color: #1da1f2;
+}
+.color_googleplus {
+	color: #ea4335;
+}
+.color_linkedin {
+	color: #0a66c2;
+}
+// Social Solor - End
+
+/* 2.2 - Color - End
+================================================== */

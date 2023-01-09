@@ -1,0 +1,382 @@
+/* 3.1 - Header - Start
+================================================== */
+
+/* header section - Start */
+.header_section {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	position: absolute;
+	&.sticky {
+		position: fixed;
+		background-color: #ffffff;
+		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+		animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
+	}
+}
+/* header section - End */
+
+// Brand Logo - Start
+.header_section {
+	.brand_logo {
+		.brand_link {
+			display: inline-block;
+			img {
+				&:nth-child(2) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.sticky {
+	.brand_logo {
+		.brand_link {
+			display: inline-block;
+			img {
+				&:nth-child(1) {
+					display: none;
+				}
+				&:nth-child(2) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+// Brand Logo - End
+
+// Main Menu - Start
+.main_menu_list {
+	>li {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+		>a {
+			display: block;
+			line-height: 1;
+			font-size: 18px;
+			padding: 15px 0;
+			font-weight: 500;
+			color: $color_black;
+			letter-spacing: -0.5px;
+		}
+		&:hover,
+		&.active {
+			>a {
+				color: $color_primary;
+			}
+		}
+	}
+
+	.dropdown {
+		>a {
+			position: relative;
+			&:after {
+				float: right;
+				line-height: 1;
+				font-size: 16px;
+				content: '\f107';
+				font-weight: 500;
+				margin-top: 1px;
+				margin-left: 6px;
+				font-family: 'Font Awesome 5 Pro';
+			}
+		}
+	}
+
+	.submenu {
+		top: 100%;
+		margin: 0px;
+		border: none;
+		font-size: 14px;
+		border-radius: 0;
+		min-width: 235px;
+		padding: 20px 0px;
+		color: $color_default;
+		box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+		>li {
+			&:not(:last-child) {
+				border-bottom: 1px solid rgba(68, 68, 255, 0.05);
+			}
+			>a {
+				display: block;
+				line-height: 1;
+				font-size: 15px;
+				font-weight: 500;
+				padding: 15px 30px;
+				white-space: nowrap;
+				color: $color_default;
+				transition: $transition;
+			}
+			&:hover,
+			&.active {
+				>a {
+					color: $color_primary;
+					background-color: rgba(68, 68, 255, 0.05);
+				}
+			}
+		}
+		.dropdown {
+			>a {
+				&:after {
+					margin-top: 0;
+					content: '\f105';
+				}
+			}
+		}
+		.submenu {
+			top: 0px;
+			left: 100%;
+			border-top-left-radius: 0px;
+		}
+	}
+	li {
+		&:hover {
+			>.submenu,
+			>.megamenu {
+				display: block;
+				animation: 0.3s ease-in-out 0s normal none 1 running fadeInUp;
+			}
+		}
+	}
+}
+// Main Menu - End
+
+// Offcanvas Button - satrt
+.offcanvas_btn_1 {
+	color: #ffffff;
+	align-items: center;
+	display: inline-flex;
+	.menu_text {
+		line-height: 1;
+		font-size: 16px;
+		margin-right: 30px;
+		letter-spacing: .125px;
+	}
+	.bar_icon {
+		small {
+			height: 4px;
+			display: block;
+			background-color: #ffffff;
+			transition: all .3s ease-in-out;
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+			&:nth-child(1) {
+				width: 20px;
+				margin-left: 18px;
+			}
+			&:nth-child(2) {
+				width: 14px;
+				margin-left: 18px;
+			}
+			&:nth-child(3) {
+				width: 38px;
+			}
+		}
+	}
+	&:hover {
+		.bar_icon {
+			small {
+				&:nth-child(2) {
+					width: 38px;
+					margin-left: 0;
+				}
+				&:nth-child(3) {
+					width: 18px;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+.sticky {
+	.offcanvas_btn_1 {
+		color: $color_black;
+		.bar_icon {
+			small {
+				background-color: $color_black;
+			}
+		}
+	}
+}
+
+.black_content {
+	.offcanvas_btn_1 {
+		color: $color_black;
+		.bar_icon {
+			small {
+				background-color: $color_black;
+			}
+		}
+	}
+}
+
+.offcanvas_btn_2 {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	background-color: $color_primary;
+	&:hover {
+		background-color: $color_danger;
+	}
+}
+
+.black_content {
+	.offcanvas_btn_2 {
+		background-color: $color_black;
+		&:hover {
+			background-color: $color_primary;
+		}
+	}
+}
+// Offcanvas Button - End
+
+// Header Contact Info - Start
+.header_contact_info {
+	>li {
+		font-size: 18px;
+		font-weight: 500;
+		position: relative;
+		color: $color_black;
+		&:not(:last-child) {
+			&:after {
+				content: '/';
+				margin: 0 40px;
+				display: inline-block;
+			}
+		}
+	}
+}
+// Header Contact Info - End
+
+// Header Style 1 - Start
+.header_style_1 {
+	display: flex;
+	padding: 56px 90px;
+	align-items: center;
+	justify-content: space-between;
+	&.sticky {
+		padding: 20px 90px;
+	}
+}
+// Header Style 1 - End
+
+// Header Style 2 - Start
+.header_style_2,
+.header_style_5 {
+	.main_menu {
+		display: flex;
+		padding: 40px 80px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&.sticky {
+		.main_menu {
+			padding: 15px 80px;
+		}
+	}
+
+	.main_menu_inner {
+		flex-grow: unset;
+	}
+}
+
+.header_style_2.white_content,
+.header_style_5.white_content {
+	.main_menu_list > li > a {
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.main_menu_list > li:hover > a,
+	.main_menu_list > li.active > a {
+		color: #ffffff;
+	}
+
+	&.sticky {
+		.main_menu_list > li > a {
+			color: $color_black;
+		}
+		.main_menu_list > li:hover > a,
+		.main_menu_list > li.active > a {
+			color: $color_primary;
+		}
+	}
+}
+// Header Style 2 - End
+
+// Header Style 3 - Start
+.header_style_3 {
+	padding: 50px 0;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.header_contact_info {
+		>li {
+			color: #ffffff;
+			&:after {
+				color: rgba(255, 255, 255, 0.4);
+			}
+		}
+	}
+
+	&.sticky {
+		padding: 15px 0;
+		.header_contact_info > li {
+			color: $color_black;
+			&:after {
+				color: rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+}
+// Header Style 3 - End
+
+// Header Style 4 - Start
+.header_style_4 {
+	display: flex;
+	padding: 50px 90px;
+	align-items: center;
+	justify-content: flex-end;
+	&.sticky {
+		box-shadow: none;
+		padding: 15px 90px;
+		background-color: transparent;
+	}
+	.offcanvas_btn_2 {
+		border: 2px solid #FF5E15;
+		rect {
+			fill: #FF5E15;
+		}
+	}
+}
+// Header Style 4 - End
+
+// Header Style 5 - Start
+.header_style_5 {
+	&.white_content.sticky .main_menu_list > li:hover > a,
+	&.white_content.sticky .main_menu_list > li.active > a,
+	&.white_content.sticky .main_menu_list > li:hover > a,
+	&.white_content.sticky .main_menu_list > li.active > a {
+		color: $color_danger;
+	}
+	.main_menu_list .submenu > li:hover > a,
+	.main_menu_list .submenu > li.active > a {
+		color: $color_danger;
+		background-color: rgba(255, 82, 82, 0.05);
+	}
+}
+// Header Style 5 - End
+
+/* 3.1 - Header - End
+================================================== */

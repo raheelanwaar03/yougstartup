@@ -1,0 +1,107 @@
+/* 3.14 - Client - Start
+================================================== */
+
+// Award Default Style - Start
+.client_section {
+	&.bg_gray {
+		background-color: #F9F9F9;
+	}
+	&.bg_danger {
+		background-color: #FF6D54;
+	}
+}
+// Award Default Style - End
+
+// Client Item - Start
+.client_item {
+	height: 340px;
+	display: flex;
+	padding: 15px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	img {
+		max-width: 218px;
+	}
+	&:hover {
+		z-index: 1;
+		box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.client_style_3 {
+	margin: -25px;
+	.col {
+		padding: 25px;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.client_item {
+		height: 202px;
+		background-color: #2A2A2A;
+		&:hover {
+			background-color: #000000;
+		}
+		img {
+			max-width: 130px;
+		}
+	}
+}
+// Client Item - End
+
+// Client Item 2 - Start
+.client_item_2 {
+	height: 200px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	&:before {
+		top: 0;
+		left: 0;
+		content: '';
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transition: $transition;
+		background-color: $color_black;
+	}
+	img {
+		max-width: 180px;
+	}
+	&:hover {
+		border-color: $color_black;
+		&:before {
+			top: 12px;
+			left: 12px;
+		}
+	}
+}
+// Client Item 2 - End
+
+// Client Items Group - Start
+.client_items_group {
+	border-top: 1px solid #EDEDED;
+	border-left: 1px solid #EDEDED;
+	>li {
+		width: 20%;
+		border-right: 1px solid #EDEDED;
+		border-bottom: 1px solid #EDEDED;
+	}
+
+	.client_item {
+		height: 160px;
+		img {
+			max-width: 110px;
+		}
+	}
+}
+// Client Items Group - End
+
+/* 3.14 - Client - End
+================================================== */

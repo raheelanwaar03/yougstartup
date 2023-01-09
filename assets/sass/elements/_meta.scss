@@ -1,0 +1,75 @@
+/* 2.14 - Meta (Post Meta) - Start
+================================================== */
+
+// Admin Chip - Start
+.admin_chip {
+  display: flex;
+  align-items: center;
+  .admin_thumbnail {
+    height: 60px;
+    flex: 0 0 60px;
+    overflow: hidden;
+    margin-right: 30px;
+    border-radius: 100%;
+  }
+}
+// Admin Chip - End
+
+// Post Meta - Start
+.post_meta {
+  >li {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: $color_default;
+    &:hover {
+      color: $color_primary;
+    }
+  }
+  .admin_thumbnail {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 30px;
+    border-radius: 100%;
+    display: inline-block;
+  }
+  svg, i {
+    margin-right: 30px;
+  }
+}
+// Post Meta - End
+
+// Post Meta 2 - Start
+.post_meta_2 {
+  margin: -20px;
+  >li {
+    padding: 20px;
+  }
+  span,small {
+    line-height: 1;
+    display: block;
+  }
+  span {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    font-family: $heading_font;
+  }
+  small {
+    color: #818291;
+    font-size: 16px;
+  }
+}
+// Post Meta 2 - End
+
+/* 2.14 - Meta (Post Meta) - End
+================================================== */

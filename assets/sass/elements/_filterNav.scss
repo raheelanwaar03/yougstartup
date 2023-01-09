@@ -1,0 +1,31 @@
+/* 2.12 - Filter Nav - Start
+================================================== */
+.filter-btns-group {
+  margin-bottom: 60px;
+  li {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  button {
+    padding: 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: $color_black;
+    &:hover,
+    &.active {
+      color: $color_primary;
+    }
+  }
+}
+
+.filter-btns-group.style_2 {
+  button {
+    &:hover,
+    &.active {
+      color: $color_danger;
+    }
+  }
+}
+/* 2.12 - Filter Nav - End
+================================================== */

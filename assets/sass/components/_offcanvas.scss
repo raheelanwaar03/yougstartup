@@ -1,0 +1,144 @@
+/* 3.4 - Offcanvas - Start
+================================================== */
+.sidebar-menu-wrapper {
+	display: block;
+}
+
+.offcanvas_sidebar {
+	top: 0;
+	width: 370px;
+	right: -400px;
+	height: 100vh;
+	z-index: 9999;
+	position: fixed;
+	overflow-y: scroll;
+	padding: 80px 30px 50px;
+	background-color: #ffffff;
+	transition: 0.6s cubic-bezier(1, 0, 0, 1);
+	&.active {
+		right: 0px;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.btn {
+		min-width: auto;
+		font-size: 16px;
+		padding: 21px 40px;
+	}
+}
+.offcanvas_sidebar::-webkit-scrollbar {width: 0px;}
+
+.offcanvas_close_btn {
+	top: 15px;
+	right: 20px;
+	line-height: 1;
+	font-size: 24px;
+	position: absolute;
+	&:hover {
+		color: red;
+	}
+}
+
+.offcanvas_overlay {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	position: fixed;
+	transition: $transition;
+	background: rgba(0, 0, 0, 0.8);
+	&.active {
+		opacity: 1;
+		display: block;
+	}
+}
+
+.offcanvas_title {
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.Offcanvas_menu_list {
+	margin-bottom: 50px;
+	>li {
+		>a {
+			display: block;
+			line-height: 1;
+			padding: 18px 0;
+			font-size: 18px;
+			font-weight: 500;
+			color: $color_black;
+		}
+
+		&:hover,
+		&.active {
+			>a {
+				color: $color_primary;
+			}
+		}
+	}
+	.dropdown-toggle::after {
+		margin: 0;
+		width: 20px;
+		height: 20px;
+		border: none;
+		float: right;
+		font-size: 14px;
+		content: '\f107';
+		font-weight: 600;
+		line-height: 22px;
+		text-align: center;
+		border-radius: 100%;
+		background-color: #f1f1f1;
+		font-family: 'Font Awesome 5 Pro';
+	}
+	.dropdown-menu {
+		width: 100%;
+		border: none;
+		padding: 10px;
+		min-width: auto;
+		border-radius: 0;
+		color: $color_black;
+		background-color: #f9f9f9;
+		transform: unset !important;
+		position: static !important;
+		>li {
+			&:not(:last-child) {
+				border-bottom: 1px solid rgba(68, 68, 255, 0.05);
+			}
+			>a {
+				display: block;
+				font-size: 15px;
+				font-weight: 500;
+				padding: 10px 15px;
+				color: $color_black;
+			}
+
+			&:hover,
+			&.active {
+				>a {
+					color: $color_primary;
+					background-color: rgba(68, 68, 255, 0.05);
+				}
+			}
+		}
+	}
+}
+
+.offcanvas_sidebar {
+	.brand_logo {
+		display: block;
+		margin-bottom: 50px;
+	}
+}
+/* 3.4 - Offcanvas - End
+================================================== */

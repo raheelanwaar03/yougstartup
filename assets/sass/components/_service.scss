@@ -1,0 +1,137 @@
+/* 3.9 - Service - Start
+================================================== */
+
+// Service Default Style - Start
+.service_section {
+	&.bg_gray {
+		background-color: #f9f9f9;
+	}
+}
+// Service Default Style - End
+
+// Service Grid - Start
+.service_grid {
+	.item_image {
+		overflow: hidden;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			display: block;
+			transition: $transition;
+		}
+	}
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+	}
+
+	.item_title {
+		font-size: 36px;
+		margin-bottom: 15px;
+		letter-spacing: 0.13px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+// Service Grid - End
+
+// Service Primary - Start
+.service_primary {
+	padding-right: 60px;
+	.item_title {
+		font-size: 32px;
+		margin-bottom: 25px;
+		letter-spacing: -0.02em;
+	}
+	p {
+		color: #818291;
+		font-size: 20px;
+	}
+}
+// Service Primary - End
+
+// Service Boxed - Start
+.service_boxed {
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	padding: 50px 30px;
+	box-shadow: 0px 20px 60px #f0f0f0;
+	.item_icon {
+		flex: 0 0 135px;
+	}
+	.item_title {
+		font-size: 32px;
+		margin-bottom: 15px;
+		letter-spacing: -0.02em;
+	}
+	p {
+		color: #818291;
+		font-size: 20px;
+	}
+}
+// Service Boxed - End
+
+// Service Item Icon - Start
+.service_item_icon {
+	text-align: center;
+
+	.item_icon,
+	.icon_wrap {
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		transition: $transition;
+	}
+	.item_icon {
+		width: 180px;
+		height: 180px;
+		margin-bottom: 30px;
+		background-color: rgba(255, 109, 84, 0.1);
+		border: 2px dashed rgba(255, 109, 84, 0.2);
+	}
+	.icon_wrap {
+		width: 140px;
+		height: 140px;
+		background-color: #ffffff;
+	}
+
+	.item_title {
+		font-size: 26px;
+		margin-bottom: 18px;
+		letter-spacing: 0.02em;
+		transition: $transition;
+	}
+
+	p {
+		color: #5a5c62;
+		font-size: 18px;
+		letter-spacing: 0.03em;
+	}
+
+	&:hover {
+		.item_icon {
+			background-color: #ffffff;
+			border: 2px dashed rgba(255, 109, 84, 1);
+		}
+		.icon_wrap {
+			background-color: $color_danger;
+			path {
+				fill: #ffffff;
+			}
+		}
+
+		.item_title {
+			color: $color_danger;
+		}
+	}
+}
+// Service Item Icon - End
+
+/* 3.9 - Service - End
+================================================== */

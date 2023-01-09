@@ -1,0 +1,111 @@
+/* table of content - start
+================================================== */
+/* 
+* Project Name   :  Dexfolio - Portfolio & Agency Template
+* File           :  CSS Base
+* Version        :  1.0.0
+* Last change    :  11 April 2022
+*	==================================================
+* 1 - Template Global Settings
+	1.1 - Template Fonts
+	1.2 - Template Global Reset
+
+* 2 - Template Elements
+	2.1 - Backtotop
+	2.2 - Color
+	2.3 - Space
+	2.4 - Button
+	2.5 - List
+	2.6 - Title
+	2.7 - Carousel
+	2.8 - Form
+	2.9 - Social
+	2.10 - Rating
+	2.11 - Pagination
+	2.12 - Filter Nav
+	2.13 - Category List
+	2.14 - Meta
+	2.15 - Comment
+	2.16 - Blockquote
+	2.17 - Decoration
+
+* 3 - Template Components
+	3.1 - Header
+	3.2 - Footer
+	3.3 - Breadcrumb
+	3.4 - Offcanvas
+	3.5 - Sidebar
+	3.6 - Banner
+	3.7 - Slider
+	3.8 - About
+	3.9 - Service
+	3.10 - Portfolio
+	3.11 - Blog
+	3.12 - Details
+	3.13 - Award
+	3.14 - Client
+	3.15 - Contact
+	3.16 - Counter
+	3.17 - Team
+	3.18 - Calltoaction
+	3.19 - Video
+	3.20 - Testimonial
+	3.21 - Feature
+	3.22 - Pricing
+	3.23 - Home
+*/
+/* table of content - end
+================================================== */
+
+// Template Global Settings
+@import 'variable';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+// Template Elements
+@import 'elements/backtotop';
+@import 'elements/color';
+@import 'elements/space';
+@import 'elements/button';
+@import 'elements/list';
+@import 'elements/title';
+@import 'elements/carousel';
+@import 'elements/form';
+@import 'elements/social';
+@import 'elements/rating';
+@import 'elements/pagination';
+@import 'elements/filterNav';
+@import 'elements/categoryList';
+@import 'elements/meta';
+@import 'elements/comment';
+@import 'elements/blockquote';
+@import 'elements/decoration';
+
+// Template Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumb';
+@import 'components/offcanvas';
+@import 'components/sidebar';
+@import 'components/banner';
+@import 'components/slider';
+@import 'components/about';
+@import 'components/service';
+@import 'components/portfolio';
+@import 'components/blog';
+@import 'components/details';
+@import 'components/award';
+@import 'components/client';
+@import 'components/contact';
+@import 'components/counter';
+@import 'components/team';
+@import 'components/calltoaction';
+@import 'components/video';
+@import 'components/testimonial';
+@import 'components/feature';
+@import 'components/pricing';
+@import 'components/home';
+
+// Template Responsive
+@import 'responsive';

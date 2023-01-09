@@ -1,0 +1,201 @@
+/* 2.4 - Button - Start
+================================================== */
+.load_more {
+	margin-top: 90px;
+}
+
+.btn {
+	z-index: 1;
+	border: none;
+	outline: none;
+	line-height: 1;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 0;
+	min-width: 330px;
+	overflow: hidden;
+	position: relative;
+	padding: 41px 40px;
+	display: inline-block;
+	text-transform: uppercase;
+	transition: $transition;
+	&:before {
+		top: 0px;
+		width: 0px;
+		left: auto;
+		right: 0px;
+		z-index: -1;
+		bottom: 0px;
+		content: '';
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&:hover {
+		color: #ffffff;
+		&:before {
+			left: 0px;
+			width: 100%;
+			right: auto;
+		}
+	}
+
+	&.btn_primary {
+		background-color: $color_primary;
+		&:before {
+			background-color: $color_danger;
+		}
+	}
+
+	&.btn_secondary {
+		background-color: $color_black;
+		&:before {
+			background-color: $color_primary;
+		}
+	}
+
+	&.btn_info {
+		background-color: $color_info;
+		&:before {
+			background-color: $color_primary;
+		}
+		&:hover {
+			border-color: $color_primary;
+		}
+	}
+
+	&.btn_danger {
+		background-color: $color_danger;
+		&:before {
+			background-color: $color_primary;
+		}
+		&:hover {
+			border-color: $color_primary;
+		}
+	}
+
+	&.btn_white {
+		color: $color_black;
+		background-color: #ffffff;
+		&:before {
+			background-color: $color_black;
+		}
+		&:hover {
+			color: #ffffff;
+			border-color: $color_black;
+		}
+	}
+
+	&.btn_shadow {
+		font-size: 16px;
+		min-width: 220px;
+		padding: 25px 30px;
+		box-shadow: 10px 10px #353B56;
+
+		&.btn_secondary {
+			border-color: $color_black;
+			&:hover {
+				color: $color_black;
+			}
+		}
+
+		&.btn_white {
+			background-color: #ffffff;
+			border: 1px solid $color_black;
+		}
+	}
+}
+
+.btn_block {
+	width: 100%;
+	display: block;
+}
+
+.btn_text {
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: $color_default;
+	display: inline-block;
+	text-transform: uppercase;
+	span {
+		position: relative;
+		padding-bottom: 5px;
+		display: inline-block;
+		border-bottom: 3px solid $color_default;
+		&:before {
+			right: 0;
+			width: 0;
+			left: auto;
+			bottom: -3px;
+			height: 3px;
+			content: '';
+			position: absolute;
+			transition: $transition;
+			background-color: $color_primary;
+		}
+	}
+	&:hover {
+		color: $color_primary;
+		span {
+			&:before {
+				left: 0px;
+				width: 100%;
+				right: auto;
+			}
+		}
+	}
+}
+
+.play_btn {
+	width: 160px;
+	height: 160px;
+	color: #ffffff;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	background-color: $color_primary;
+	&:hover {
+		color: $color_primary;
+		background-color: #ffffff;
+		box-shadow: 0 50px 70px 0 rgba(0, 0, 0, 0.3);
+		path {
+			fill: $color_primary;
+		}
+	}
+
+	&.bg_danger {
+		background-color: $color_danger;
+	}
+}
+
+.play_btn_2 {
+	align-items: center;
+	display: inline-flex;
+	span {
+		width: 100px;
+		height: 100px;
+		color: #ffffff;
+		font-size: 32px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		background-color: #803CFF;
+		svg {
+			margin-left: 6px;
+		}
+	}
+	small {
+		font-size: 26px;
+		font-weight: 500;
+		margin-left: 30px;
+		display: inline-block;
+	}
+}
+/* 2.4 - Button - End
+================================================== */

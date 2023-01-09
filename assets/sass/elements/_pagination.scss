@@ -1,0 +1,38 @@
+/* 2.11 - Pagination - Start
+================================================== */
+.pagination_nav {
+  margin: -2px;
+  li {
+    padding: 2px;
+    &:first-child,
+    &:last-child {
+      >a {
+        width: auto;
+        height: auto;
+        border: none;
+      }
+    }
+  }
+  a {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: #9A9A9A;
+    font-size: 26px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+  }
+  li {
+    &:hover,
+    &.active {
+      a {
+        color: $color_black;
+        border-color: $color_black;
+      }
+    }
+  }
+}
+/* 2.11 - Pagination - End
+================================================== */

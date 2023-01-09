@@ -1,0 +1,251 @@
+/* 2.17 - Decoration - Start
+================================================== */
+
+// Body Shape Images - Start
+.global_shape_image {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+}
+// Body Shape Images - End
+
+// Line Decoration - Start
+.decoration_wrap {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.line_decoration_y,
+.line_decoration_x {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.line_item {
+  position: absolute;
+  &:before,
+  &:after {
+    width: 3px;
+    height: 3px;
+    content: '';
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/icons/dot.png);
+  }
+}
+
+.line_decoration_y {
+  &.line_white {
+    .line_item {
+      &:nth-child(1),
+      &:nth-child(3) {
+        border-color: rgba(255, 255, 255, 0.07);
+      }
+      &:nth-child(2) {
+        background-color: rgba(255, 255, 255, 0.07);
+      }
+    }
+  }
+
+  .line_item {
+    top: 0;
+    bottom: 0;
+    &:before {
+      animation: lineTop 15s ease-out infinite;
+    }
+    &:after {
+      animation: lineBottom 15s ease-out infinite;
+    }
+    &:nth-child(1) {
+      left: 184px;
+      width: 94px;
+      border-left: 1px solid rgba(112, 112, 112, 0.05);
+      border-right: 1px solid rgba(112, 112, 112, 0.05);
+      &:before {
+        left: -2px;
+      }
+      &:after {
+        right: -2px;
+      }
+    }
+    &:nth-child(2) {
+      left: 50%;
+      width: 1px;
+      transform: translateX(-50%);
+      background-color: rgba(112, 112, 112, 0.05);
+      &:before {
+        left: -2px;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      width: 94px;
+      right: 184px;
+      border-left: 1px solid rgba(112, 112, 112, 0.05);
+      border-right: 1px solid rgba(112, 112, 112, 0.05);
+      &:before {
+        left: -2px;
+      }
+      &:after {
+        right: -2px;
+      }
+    }
+  }
+}
+
+@keyframes lineTop {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes lineBottom {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+.line_decoration_x {
+  &.line_white {
+    .line_item {
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(2) {
+        background-color: rgba(255, 255, 255, 0.07);
+      }
+    }
+  }
+  .line_item {
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(112, 112, 112, 0.05);
+    &:before {
+      top: -1px;
+      animation: lineRight 15s ease-out infinite;
+    }
+    &:after {
+      bottom: -1px;
+      animation: lineLeft 15s ease-out infinite;
+    }
+    &:nth-child(1) {
+      top: 160px;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      bottom: 160px;
+    }
+  }
+}
+
+@keyframes lineRight {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes lineLeft {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+// Line Decoration - End
+
+// Shape Decoration - Start
+.decoration_wrap {
+  .deco_item {
+    z-index: -1;
+    position: absolute;
+  }
+}
+// Shape Decoration - End
+
+// Block Overlay - Start
+.block_overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+
+  .container {
+    padding: 0;
+    height: 100%;
+    max-width: 1046px;
+    &.max_width_1140 {
+      max-width: 1140px;
+    }
+  }
+
+  .block_item {
+    width: 50%;
+    float: left;
+    height: 100%;
+    display: inline-block;
+    &:nth-child(odd) {
+      background-color: #FCFCFC;
+      border-left: 1px solid #F8F8F8;
+      border-right: 1px solid #F8F8F8;
+    }
+    &:nth-child(even) {
+      background-color: #ffffff;
+      border-right: 1px solid #F8F8F8;
+    }
+  }
+
+  &.white_style {
+    .block_item {
+      &:nth-child(odd) {
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      &:nth-child(even) {
+        background-color: transparent;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+// Block Overlay - End
+
+/* 2.17 - Decoration - End
+================================================== */

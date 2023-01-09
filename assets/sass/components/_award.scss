@@ -1,0 +1,114 @@
+/* 3.13 - Award - Start
+================================================== */
+
+// Award Default Style - Start
+.award_section {
+	&.bg_blue {
+		background-color: $color_primary;
+	}
+	&.bg_gray {
+		background-color: #F9F9F9;
+	}
+}
+// Award Default Style - End
+
+// Award Item - Start
+.award_item {
+	padding-top: 30px;
+	transition: $transition;
+	border-top: 4px solid #ffffff;
+
+	.year_text {
+		color: #ffffff;
+		line-height: 1;
+		font-size: 72px;
+		margin-bottom: 30px;
+		transition: $transition;
+	}
+	&:hover {
+		border-top-color: #ffffff;
+	}
+
+	.award_list {
+		>li {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		a {
+			color: #ffffff;
+			font-size: 26px;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+}
+// Award Item - End
+
+// Award Item Style 2 - Start
+.award_item.style_2 {
+	padding: 0;
+	border: none;
+
+	.year_text {
+		color: #d0d0d0;
+		font-size: 36px;
+		letter-spacing: -0.03em;
+	}
+	
+	p {
+		color: #d0d0d0;
+		font-size: 36px;
+		letter-spacing: -0.03em;
+	}
+}
+// Award Item Style 2 - End
+
+// Award Item Style 3 - Start
+.award_item.style_3 {
+	border: none;
+	min-height: 590px;
+	padding: 120px 60px;
+	background-color: #ffffff;
+	transition: $transition;
+
+	.item_logo {
+		margin-bottom: 20px;
+	}
+
+	.item_logo_link {
+		max-width: 200px;
+	}
+
+	.award_list a {
+		color: #636363;
+		font-weight: 300;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.item_title {
+		font-size: 46px;
+		font-weight: 700;
+		margin-bottom: 14px;
+		transition: $transition;
+	}
+
+	&:hover {
+		background-color: $color_danger;
+
+		.item_title {
+			color: #ffffff;
+		}
+
+		.award_list a {
+			color: #ffffff;
+		}
+	}
+}
+// Award Item Style 3 - End
+
+/* 3.13 - Award - End
+================================================== */

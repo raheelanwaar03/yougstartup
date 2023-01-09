@@ -1,0 +1,23 @@
+/* 3.16 - Counter - Start
+================================================== */
+.counter_item {
+	display: flex;
+	align-items: center;
+	.count_text {
+		line-height: 1;
+		color: #d0d0d0;
+		font-size: 72px;
+		margin-right: 40px;
+		letter-spacing: -0.06em;
+	}
+	.item_title {
+		margin: 0;
+		color: #bdbdbd;
+		font-size: 18px;
+		small {
+			font-size: inherit;
+		}
+	}
+}
+/* 3.16 - Counter - End
+================================================== */

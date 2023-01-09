@@ -1,0 +1,80 @@
+/* 3.22 - Pricing - Start
+================================================== */
+.pricing_item {
+	padding: 30px;
+	border: 2px solid #F2F2F2;
+	background-color: #ffffff;
+	.pricing_header {
+		display: flex;
+		justify-content: space-between;
+	}
+	.pricing_title {
+		margin: 0;
+		line-height: 1;
+		color: #2a2b2f;
+		font-size: 26px;
+		font-weight: 400;
+	}
+	.pricing_amount {
+		color: #2A2B2F;
+		display: block;
+		line-height: 1;
+		margin-bottom: 25px;
+		sup {
+			top: -20px;
+			font-size: 26px;
+			font-weight: 500;
+		}
+		strong {
+			font-size: 56px;
+			font-weight: 700;
+		}
+	}
+	.pricing_info_list {
+		margin-bottom: 60px;
+		>li {
+			font-size: 18px;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.pricing_btn {
+		line-height: 1;
+		display: block;
+		color: #2B2C30;
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+		padding: 28px 30px 27px;
+		background-color: #F2F2F2;
+	}
+	&:hover {
+		.pricing_btn {
+			color: #ffffff;
+			background-color: $color_danger;
+		}
+	}
+
+	&.active {
+		color: #ffffff;
+		border-color: $color_danger;
+		background-color: $color_danger;
+		.pricing_title,
+		.pricing_amount {
+			color: #ffffff;
+		}
+		.pricing_btn {
+			color: #2B2C30;
+			background-color: #ffffff;
+		}
+		&:hover {
+			.pricing_btn {
+				color: #ffffff;
+				background-color: #2B2C30;
+			}
+		}
+	}
+}
+/* 3.22 - Pricing - End
+================================================== */

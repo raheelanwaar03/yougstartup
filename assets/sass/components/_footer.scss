@@ -1,0 +1,275 @@
+/* 3.2 - Footer - Start
+================================================== */
+
+// Footer Default Style - Start
+.footer_section {
+	.social_primary {
+		a {
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.footer_widget_title {
+	color: #ffffff;
+	line-height: 1;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.footer_info_list {
+	>li {
+		color: #696990;
+		&:not(:last-child) {
+			margin-bottom: 2px;
+		}
+	}
+
+	a {
+		color: #696990;
+		position: relative;
+		&:before {
+			width: 0px;
+			left: auto;
+			right: 0px;
+			bottom: 0px;
+			height: 1px;
+			content: '';
+			position: absolute;
+			background-color: #ffffff;
+			transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+		}
+		&:hover {
+			color: #ffffff;
+			&:before {
+				left: 0px;
+				width: 100%;
+				right: auto;
+			}
+		}
+	}
+}
+
+.footer_style_1 .footer_bottom,
+.footer_style_2 .footer_bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+// Footer Default Style - End
+
+// Footer Style 1 - Start
+.footer_style_1 {
+	background-color: #0D0D44;
+
+	.footer_info_list > li,
+	.footer_info_list a,
+	.social_primary a,
+	.copyright_text {
+		color: #ffffff;
+	}
+	.copyright_text a {
+		font-weight: 600;
+		text-decoration: underline;
+	}
+}
+// Footer Style 1 - End
+
+// Footer Style 2 - Start
+.footer_style_2 {
+	background-color: #000000;
+	.footer_widget_title {
+		font-size: 32px;
+		margin-bottom: 45px;
+		letter-spacing: -0.02em;
+	}
+
+	.footer_info_list {
+		>li {
+			color: #ffffff;
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+
+		a {
+			color: #ffffff;
+		}
+	}
+
+	.footer_bottom {
+		padding-bottom: 55px;
+	}
+
+	.social_primary {
+		a {
+			color: #ffffff;
+		}
+	}
+
+	.copyright_text a {
+		font-weight: 600;
+	}
+}
+// Footer Style 2 - End
+
+// Footer Style 3 - Start
+.footer_style_3 {
+	color: #ffffff;
+	padding: 120px 0 70px;
+	background-color: #101010;
+	.footer_bottom {
+		padding-top: 120px;
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+		line-height: 1;
+		font-size: 36px;
+		margin-bottom: 0;
+		letter-spacing: -0.03em;
+	}
+
+	.contact_info_list {
+		padding: 55px 0 65px;
+		li {
+			&:nth-child(1) {
+				font-size: 18px;
+			}
+			&:nth-child(2) {
+				line-height: 1;
+				font-size: 72px;
+				font-weight: 700;
+				padding: 8px 0 25px;
+				letter-spacing: -0.06em;
+				a {
+					color: #803cff;
+				}
+			}
+			&:nth-child(3) {
+				line-height: 1;
+				font-size: 26px;
+				letter-spacing: -0.04em;
+				a {
+					color: #d0d0d0;
+				}
+			}
+		}
+	}
+
+	.social_primary a {
+		color: #ffffff;
+	}
+
+	.copyright_text {
+		color: #ffffff;
+		a {
+			font-weight: 600;
+		}
+	}
+}
+// Footer Style 3 - End
+
+// Footer Style 4 - Start
+.footer_style_4 {
+	background-color: #1F212D;
+
+	.overlay {
+		background: linear-gradient(rgba(21, 22, 27, 0.8) 0%, #15161b 68.7%, #15161b 100%);
+	}
+
+	.contact_line {
+		line-height: 1;
+		font-size: 102px;
+		letter-spacing: -0.03em;
+		a {
+			color: #ff5252;
+		}
+	}
+
+	.footer_widget_area {
+		padding: 100px 0;
+	}
+
+	.brand_logo {
+		margin-bottom: 50px;
+	}
+
+	.footer_contact_list {
+		>li {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+
+		a {
+			color: rgba(255, 255, 255, 0.8);
+			font-size: 18px;
+			&:hover {
+				color: #ffffff;
+			}
+		}
+
+		.contact_number {
+			font-size: 32px;
+			color: $color_danger;
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+
+	.footer_info_list {
+		>li {
+			color: rgba(255, 255, 255, 0.8);
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		a {
+			color: rgba(255, 255, 255, 0.8);
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+
+	.footer_bottom {
+		padding: 41px 0;
+		border-top: 1px solid #2F313A;
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	.social_primary {
+		a {
+			color: rgba(255, 255, 255, 0.8);
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+
+	.copyright_text {
+		color: rgba(255, 255, 255, 0.8);
+		a {
+			font-weight: 600;
+			text-decoration: underline;
+		}
+	}
+}
+// Footer Style 4 - End
+
+/* 3.2 - Footer - End
+================================================== */

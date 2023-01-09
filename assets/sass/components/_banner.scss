@@ -1,0 +1,228 @@
+/* 3.6 - Banner - Start
+================================================== */
+
+// Banner Default - Start
+.banner_section {
+	z-index: 1;
+	display: flex;
+	padding: 150px 0;
+	min-height: 1080px;
+	position: relative;
+	align-items: center;
+	@include bg_image_property;
+	.overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		position: absolute;
+	}
+}
+// Banner Default - End
+
+// Banner Style 1 - Start
+.banner_style_1 {
+	align-items: flex-end;
+	.overlay {
+		opacity: 0.5;
+		background-image: linear-gradient(-29.358deg, #1b217a 0%, #08082c 100%);
+	}
+
+	h1 {
+		line-height: 1;
+		color: #ffffff;
+		font-size: 102px;
+		margin-bottom: 20px;
+		letter-spacing: -0.49px;
+	}
+	p {
+		font-size: 26px;
+		margin-bottom: 55px;
+		padding-right: 170px;
+		letter-spacing: 0.38px;
+	}
+}
+// Banner Style 1 - End
+
+// Banner Style 2 - Start
+.banner_style_2,
+.banner_style_3 {
+	padding: 200px 0;
+	background-size: 100%;
+	align-items: flex-end;
+	background-color: #FAFAFA;
+	h1 {
+		line-height: 1.1;
+		font-size: 180px;
+		font-weight: 700;
+		margin-bottom: 60px;
+		color: $color_primary;
+		letter-spacing: -0.44px;
+		span {
+			padding-left: 40px;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-color: $color_primary;
+		}
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+		letter-spacing: 0.55px;
+	}
+
+	.deco_title_1,
+	.deco_title_2 {
+		margin: 0;
+		z-index: -1;
+		color: #ffffff;
+		line-height: 1;
+		font-weight: 700;
+		font-size: 270px;
+		position: absolute;
+		letter-spacing: -0.04em;
+		text-shadow: 0px 0px 60px rgba(211, 211, 211, 0.43);
+	}
+	.deco_title_1 {
+		right: 115px;
+		bottom: -115px;
+	}
+	.deco_title_2 {
+		top: 155px;
+		left: -105px;
+		writing-mode: vertical-rl;
+	}
+
+	.dot_shape_1,
+	.dot_shape_2 {
+		max-width: 200px;
+	}
+	.dot_shape_1 {
+		top: 185px;
+		left: -45px;
+	}
+	.dot_shape_2 {
+		right: 300px;
+		bottom: 162px;
+	}
+
+	.triangle_shape {
+		left: 80px;
+		bottom: 230px;
+		max-width: 55px;
+	}
+	.circle_shape {
+		right: 220px;
+		bottom: 150px;
+		max-width: 175px;
+	}
+	.circle_shape_2 {
+		top: 170px;
+		left: 185px;
+		max-width: 120px;
+	}
+	.tall_shape {
+		top: 0;
+		bottom: 0;
+		left: 278px;
+		width: 260px;
+		background-color: rgba(49, 51, 80, 0.03);
+	}
+
+	.dot_overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+// Banner Style 2 - End
+
+// Banner Style 3 - Start
+.banner_style_3 {
+	.tall_shape {
+		background-color: rgba(49, 51, 80, 0.2);
+	}
+}
+// Banner Style 3 - End
+
+// Banner Style 4 - Start
+.banner_style_4 {
+	h1 {
+		color: #ffffff;
+		line-height: 1;
+		font-size: 180px;
+		margin-bottom: 60px;
+		letter-spacing: -0.06em;
+		span {
+			color: $color_default;
+		}
+	}
+
+	p {
+		font-size: 26px;
+		font-weight: 500;
+		margin-bottom: 80px;
+	}
+
+	.flex_content_wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.social_primary a {
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+// Banner Style 4 - End
+
+// Banner Style 5 - Start
+.banner_style_5 {
+	overflow: hidden;
+
+	.big_text {
+		left: 0;
+		right: 0;
+		bottom: -270px;
+		line-height: 1;
+		font-size: 555px;
+		font-weight: 700;
+		position: absolute;
+		letter-spacing: -0.03em;
+		-webkit-text-stroke-width: 1px;
+		text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+		-webkit-text-fill-color: rgba(216, 216, 216, 0.03);
+		-webkit-text-stroke-color: rgba(112, 112, 112, 0.5);
+	}
+
+	h1 {
+		font-size: 126px;
+		line-height: 126px;
+		margin-bottom: 30px;
+		letter-spacing: -0.03em;
+	}
+
+	p {
+		color: #fff;
+		opacity: 0.9;
+		font-size: 22px;
+		margin-bottom: 50px;
+		letter-spacing: 0.02em;
+	}
+
+	.btn {
+		min-width: 220px;
+		padding: 24px 40px;
+	}
+}
+// Banner Style 5 - End
+
+/* 3.6 - Banner - End
+================================================== */
